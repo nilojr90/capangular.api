@@ -1,0 +1,20 @@
+<div class="drink-destaque"  *ngIf="destaque">
+  <a (click)="closeDestaque()">
+    <img src="{{drinkDestaque.strDrinkThumb }}" alt="{{drinkDestaque.strDrink}} in a {{drinkDestaque.strGlass}}">
+  </a>
+    <h1> {{ drinkDestaque.strDrink }} </h1>
+    <span>{{drinkDestaque.strAlcoholic}}</span>
+    <p>{{drinkDestaque.strInstructions}} <a (click)="closeDestaque()"> (Fechar) </a></p>
+</div>
+
+<div class="container" >
+  <div class="drink-card" *ngFor="let drink of drinks">
+    <a (click)="onSelectDrink(drink.strDrink)">
+      <img src="{{ drink.strDrinkThumb }}/preview" alt="{{drink.strDrink}} in a {{drink.strGlass}}">
+    </a>
+    <h2 class="bottom-right text-overlay">{{ drink.strDrink }}</h2>
+  </div>
+</div>
+
+
+

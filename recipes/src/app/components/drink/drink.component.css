@@ -1,0 +1,31 @@
+div.container {
+  position: relative;
+}
+
+.drink-card {
+  width: 150;
+  height: 150;
+  display: inline-block;
+  position: relative;
+  margin: 16px;
+  border-radius: 20px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.text-overlay {
+  opacity: 0.8;
+  letter-spacing: 3px;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
+
+.drink-destaque {
+  /* margin: 16px; */
+  margin-right: auto; /*centres in compliant browsers*/
+  margin-left: auto;
+}
